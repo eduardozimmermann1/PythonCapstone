@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d4d32065b2a618a21d95b9e4cad70d6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d4d32065b2a618a21d95b9e4cad70d6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d4d32065b2a618a21d95b9e4cad70d6b = L.map(
+                "map_d4d32065b2a618a21d95b9e4cad70d6b",
+                {
+                    center: [30.0, -95.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_395858ccc7854872c229d76e4a7dff0f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_395858ccc7854872c229d76e4a7dff0f.addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var marker_eb41b44d8530075a94fdbd625d54393e = L.marker(
+                [28.562302, -80.577356],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_ff7837eded346e5353028d8999721b68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12620cc67fff04c02a685e4a5ee9fdf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_887e6ce15f5eae312627b32c714701fc = $(`<div id="html_887e6ce15f5eae312627b32c714701fc" style="width: 100.0%; height: 100.0%;">CCAFS LC-40</div>`)[0];
+                popup_12620cc67fff04c02a685e4a5ee9fdf3.setContent(html_887e6ce15f5eae312627b32c714701fc);
+            
+        
+
+        marker_eb41b44d8530075a94fdbd625d54393e.bindPopup(popup_12620cc67fff04c02a685e4a5ee9fdf3)
+        ;
+
+        
+    
+    
+                marker_eb41b44d8530075a94fdbd625d54393e.setIcon(icon_ff7837eded346e5353028d8999721b68);
+            
+    
+            var marker_4c966154b81d109ce10e7a676d95c119 = L.marker(
+                [28.563, -80.567],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_1cf4a9dfd395225299dad0198bdf19ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7076dee3fb2c852152ce48627a22defa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ce9cf16c5db21a17ba2a2c10437d002 = $(`<div id="html_4ce9cf16c5db21a17ba2a2c10437d002" style="width: 100.0%; height: 100.0%;">Coastline</div>`)[0];
+                popup_7076dee3fb2c852152ce48627a22defa.setContent(html_4ce9cf16c5db21a17ba2a2c10437d002);
+            
+        
+
+        marker_4c966154b81d109ce10e7a676d95c119.bindPopup(popup_7076dee3fb2c852152ce48627a22defa)
+        ;
+
+        
+    
+    
+                marker_4c966154b81d109ce10e7a676d95c119.setIcon(icon_1cf4a9dfd395225299dad0198bdf19ec);
+            
+    
+            var poly_line_9be603012c4871e49925c69619db5421 = L.polyline(
+                [[28.562302, -80.577356], [28.563, -80.567]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_9be603012c4871e49925c69619db5421.bindTooltip(
+                `<div>
+                     CCAFS LC-40 → Coastline: 1.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_31f91bb9638bb6700b04245859a4b1d2 = L.marker(
+                [28.572, -80.799],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_c70d34c0dc7011ef8d8ac63c5bcc2001 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_757d0341f1699512ab4e97932bfb923b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d5ca0168fdac75aca35bddf35af1bdf = $(`<div id="html_9d5ca0168fdac75aca35bddf35af1bdf" style="width: 100.0%; height: 100.0%;">Highway</div>`)[0];
+                popup_757d0341f1699512ab4e97932bfb923b.setContent(html_9d5ca0168fdac75aca35bddf35af1bdf);
+            
+        
+
+        marker_31f91bb9638bb6700b04245859a4b1d2.bindPopup(popup_757d0341f1699512ab4e97932bfb923b)
+        ;
+
+        
+    
+    
+                marker_31f91bb9638bb6700b04245859a4b1d2.setIcon(icon_c70d34c0dc7011ef8d8ac63c5bcc2001);
+            
+    
+            var poly_line_938afef72e5685bc568587b3f17a4508 = L.polyline(
+                [[28.562302, -80.577356], [28.572, -80.799]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_938afef72e5685bc568587b3f17a4508.bindTooltip(
+                `<div>
+                     CCAFS LC-40 → Highway: 21.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66340fa9a4804720403a64ab26c0ef40 = L.marker(
+                [28.5383, -81.3792],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_98d36e6bb00dc096289c45fc0ec1d941 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c7bf73893223ac6a438085c33c248d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8eceda08c5290674086abd6f863f463 = $(`<div id="html_e8eceda08c5290674086abd6f863f463" style="width: 100.0%; height: 100.0%;">City (Orlando)</div>`)[0];
+                popup_8c7bf73893223ac6a438085c33c248d1.setContent(html_e8eceda08c5290674086abd6f863f463);
+            
+        
+
+        marker_66340fa9a4804720403a64ab26c0ef40.bindPopup(popup_8c7bf73893223ac6a438085c33c248d1)
+        ;
+
+        
+    
+    
+                marker_66340fa9a4804720403a64ab26c0ef40.setIcon(icon_98d36e6bb00dc096289c45fc0ec1d941);
+            
+    
+            var poly_line_2fb299794f92cd50a4351ff1bf157ad2 = L.polyline(
+                [[28.562302, -80.577356], [28.5383, -81.3792]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_2fb299794f92cd50a4351ff1bf157ad2.bindTooltip(
+                `<div>
+                     CCAFS LC-40 → City (Orlando): 78.4 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cd59f313cd5849330a4db216ebf3c42 = L.marker(
+                [34.6391, -120.4579],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_2e30fcc9c120e24f2260c10b3edbde61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad03aeaa33e0df2ae1a56395b472ef91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cabfcaed7aa8dafbfaef5aa97d356496 = $(`<div id="html_cabfcaed7aa8dafbfaef5aa97d356496" style="width: 100.0%; height: 100.0%;">City (Lompoc)</div>`)[0];
+                popup_ad03aeaa33e0df2ae1a56395b472ef91.setContent(html_cabfcaed7aa8dafbfaef5aa97d356496);
+            
+        
+
+        marker_0cd59f313cd5849330a4db216ebf3c42.bindPopup(popup_ad03aeaa33e0df2ae1a56395b472ef91)
+        ;
+
+        
+    
+    
+                marker_0cd59f313cd5849330a4db216ebf3c42.setIcon(icon_2e30fcc9c120e24f2260c10b3edbde61);
+            
+    
+            var poly_line_83494b7c644bcd730887a92936f69c60 = L.polyline(
+                [[28.562302, -80.577356], [34.6391, -120.4579]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_83494b7c644bcd730887a92936f69c60.bindTooltip(
+                `<div>
+                     CCAFS LC-40 → City (Lompoc): 3811.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c44db3e562dac58ab05765135da5b3d8 = L.marker(
+                [28.563197, -80.57682],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_cac3c8d0ebba9c3aa457e3c349cae507 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_495171b9c91f84a90ca5338d99491842 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c942fcf2b653aef76118e8c40fc5b6b5 = $(`<div id="html_c942fcf2b653aef76118e8c40fc5b6b5" style="width: 100.0%; height: 100.0%;">CCAFS SLC-40</div>`)[0];
+                popup_495171b9c91f84a90ca5338d99491842.setContent(html_c942fcf2b653aef76118e8c40fc5b6b5);
+            
+        
+
+        marker_c44db3e562dac58ab05765135da5b3d8.bindPopup(popup_495171b9c91f84a90ca5338d99491842)
+        ;
+
+        
+    
+    
+                marker_c44db3e562dac58ab05765135da5b3d8.setIcon(icon_cac3c8d0ebba9c3aa457e3c349cae507);
+            
+    
+            var marker_b05bb9fc368433255d7765419acb0f80 = L.marker(
+                [28.563, -80.567],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_26ca984baa075df502072a0b98ae2700 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_555f7234cc4e47a6cbd25324528ecd0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9bf2eaf9c910c52ca46fa4648545755 = $(`<div id="html_a9bf2eaf9c910c52ca46fa4648545755" style="width: 100.0%; height: 100.0%;">Coastline</div>`)[0];
+                popup_555f7234cc4e47a6cbd25324528ecd0a.setContent(html_a9bf2eaf9c910c52ca46fa4648545755);
+            
+        
+
+        marker_b05bb9fc368433255d7765419acb0f80.bindPopup(popup_555f7234cc4e47a6cbd25324528ecd0a)
+        ;
+
+        
+    
+    
+                marker_b05bb9fc368433255d7765419acb0f80.setIcon(icon_26ca984baa075df502072a0b98ae2700);
+            
+    
+            var poly_line_b5dff927d81fca727e2dc1a8a1e42be6 = L.polyline(
+                [[28.563197, -80.57682], [28.563, -80.567]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_b5dff927d81fca727e2dc1a8a1e42be6.bindTooltip(
+                `<div>
+                     CCAFS SLC-40 → Coastline: 1.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c49ea00b240468ef6c963bdd8b834e5 = L.marker(
+                [28.572, -80.799],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_69a266d0c809c6fc041177dacbec7f4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cb64dabad2b6232315622877308b714 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd33f74b5c4a39d08939cfceb7f20b40 = $(`<div id="html_fd33f74b5c4a39d08939cfceb7f20b40" style="width: 100.0%; height: 100.0%;">Highway</div>`)[0];
+                popup_4cb64dabad2b6232315622877308b714.setContent(html_fd33f74b5c4a39d08939cfceb7f20b40);
+            
+        
+
+        marker_8c49ea00b240468ef6c963bdd8b834e5.bindPopup(popup_4cb64dabad2b6232315622877308b714)
+        ;
+
+        
+    
+    
+                marker_8c49ea00b240468ef6c963bdd8b834e5.setIcon(icon_69a266d0c809c6fc041177dacbec7f4f);
+            
+    
+            var poly_line_31a623877097d38253e80ea98aaa570e = L.polyline(
+                [[28.563197, -80.57682], [28.572, -80.799]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_31a623877097d38253e80ea98aaa570e.bindTooltip(
+                `<div>
+                     CCAFS SLC-40 → Highway: 21.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ead7f9ee4a03c0ec3e2211536573d8bc = L.marker(
+                [28.5383, -81.3792],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_a96d285199a081fc0bc3ba7b5c4b04e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e8939a6e9b8215fa70469ed8d40beac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8624fe46800f9a8786e4df5dd34ee0e6 = $(`<div id="html_8624fe46800f9a8786e4df5dd34ee0e6" style="width: 100.0%; height: 100.0%;">City (Orlando)</div>`)[0];
+                popup_7e8939a6e9b8215fa70469ed8d40beac.setContent(html_8624fe46800f9a8786e4df5dd34ee0e6);
+            
+        
+
+        marker_ead7f9ee4a03c0ec3e2211536573d8bc.bindPopup(popup_7e8939a6e9b8215fa70469ed8d40beac)
+        ;
+
+        
+    
+    
+                marker_ead7f9ee4a03c0ec3e2211536573d8bc.setIcon(icon_a96d285199a081fc0bc3ba7b5c4b04e3);
+            
+    
+            var poly_line_c04be4fa2c950347d542faab88471afa = L.polyline(
+                [[28.563197, -80.57682], [28.5383, -81.3792]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_c04be4fa2c950347d542faab88471afa.bindTooltip(
+                `<div>
+                     CCAFS SLC-40 → City (Orlando): 78.4 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_de08375a499968f4fe91753de05a444e = L.marker(
+                [34.6391, -120.4579],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_91b48b814b09b6975ec4902caed2a781 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_605d4139ff384f6be3649ca0c8072e8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae2fddf2b8aa4fbd4738b99677819296 = $(`<div id="html_ae2fddf2b8aa4fbd4738b99677819296" style="width: 100.0%; height: 100.0%;">City (Lompoc)</div>`)[0];
+                popup_605d4139ff384f6be3649ca0c8072e8b.setContent(html_ae2fddf2b8aa4fbd4738b99677819296);
+            
+        
+
+        marker_de08375a499968f4fe91753de05a444e.bindPopup(popup_605d4139ff384f6be3649ca0c8072e8b)
+        ;
+
+        
+    
+    
+                marker_de08375a499968f4fe91753de05a444e.setIcon(icon_91b48b814b09b6975ec4902caed2a781);
+            
+    
+            var poly_line_f2094d5fb5c9b9298d69b102453940a4 = L.polyline(
+                [[28.563197, -80.57682], [34.6391, -120.4579]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_f2094d5fb5c9b9298d69b102453940a4.bindTooltip(
+                `<div>
+                     CCAFS SLC-40 → City (Lompoc): 3811.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f77261f40ed74e0b959933c6391237e5 = L.marker(
+                [28.573255, -80.646895],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_fe1ae9dde65c1149469ee8c0c30055ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2774e98de5427e8a9a746f5a1337e36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6b8fca2e1adfdddffb5918944693cd5 = $(`<div id="html_a6b8fca2e1adfdddffb5918944693cd5" style="width: 100.0%; height: 100.0%;">KSC LC-39A</div>`)[0];
+                popup_d2774e98de5427e8a9a746f5a1337e36.setContent(html_a6b8fca2e1adfdddffb5918944693cd5);
+            
+        
+
+        marker_f77261f40ed74e0b959933c6391237e5.bindPopup(popup_d2774e98de5427e8a9a746f5a1337e36)
+        ;
+
+        
+    
+    
+                marker_f77261f40ed74e0b959933c6391237e5.setIcon(icon_fe1ae9dde65c1149469ee8c0c30055ac);
+            
+    
+            var marker_eefa265b2d59148df264744f7e3d2096 = L.marker(
+                [28.563, -80.567],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_9896dee1b5a8586bf37e10d71050ad41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a60949bb5d6149d6da7c442d8dadf0d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bef49de4c0ca0095db96c0c4096d119 = $(`<div id="html_1bef49de4c0ca0095db96c0c4096d119" style="width: 100.0%; height: 100.0%;">Coastline</div>`)[0];
+                popup_a60949bb5d6149d6da7c442d8dadf0d2.setContent(html_1bef49de4c0ca0095db96c0c4096d119);
+            
+        
+
+        marker_eefa265b2d59148df264744f7e3d2096.bindPopup(popup_a60949bb5d6149d6da7c442d8dadf0d2)
+        ;
+
+        
+    
+    
+                marker_eefa265b2d59148df264744f7e3d2096.setIcon(icon_9896dee1b5a8586bf37e10d71050ad41);
+            
+    
+            var poly_line_541db4e19e6ed30955a1410f194e203e = L.polyline(
+                [[28.573255, -80.646895], [28.563, -80.567]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_541db4e19e6ed30955a1410f194e203e.bindTooltip(
+                `<div>
+                     KSC LC-39A → Coastline: 7.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63bb8ec178fa894095d954242b7aaa69 = L.marker(
+                [28.572, -80.799],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_74fb02e9bcdcae7404fdbc64329f866c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_218b66b6b5c4667d1f34e070de0b38f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdb1fb68980b50e926341489cd122e4d = $(`<div id="html_cdb1fb68980b50e926341489cd122e4d" style="width: 100.0%; height: 100.0%;">Highway</div>`)[0];
+                popup_218b66b6b5c4667d1f34e070de0b38f0.setContent(html_cdb1fb68980b50e926341489cd122e4d);
+            
+        
+
+        marker_63bb8ec178fa894095d954242b7aaa69.bindPopup(popup_218b66b6b5c4667d1f34e070de0b38f0)
+        ;
+
+        
+    
+    
+                marker_63bb8ec178fa894095d954242b7aaa69.setIcon(icon_74fb02e9bcdcae7404fdbc64329f866c);
+            
+    
+            var poly_line_3ffcade3e4ea3cabc5195f870d7e30e2 = L.polyline(
+                [[28.573255, -80.646895], [28.572, -80.799]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_3ffcade3e4ea3cabc5195f870d7e30e2.bindTooltip(
+                `<div>
+                     KSC LC-39A → Highway: 14.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c14b19c8cb3a9801b4d55875b95cfae8 = L.marker(
+                [28.5383, -81.3792],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_a6de8d7aed2c941b2eab4fdddd11409f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ea5cad818fddf578ba1757fd7bc4104 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d797b943f31e7a976f3623b0ffdce44 = $(`<div id="html_4d797b943f31e7a976f3623b0ffdce44" style="width: 100.0%; height: 100.0%;">City (Orlando)</div>`)[0];
+                popup_7ea5cad818fddf578ba1757fd7bc4104.setContent(html_4d797b943f31e7a976f3623b0ffdce44);
+            
+        
+
+        marker_c14b19c8cb3a9801b4d55875b95cfae8.bindPopup(popup_7ea5cad818fddf578ba1757fd7bc4104)
+        ;
+
+        
+    
+    
+                marker_c14b19c8cb3a9801b4d55875b95cfae8.setIcon(icon_a6de8d7aed2c941b2eab4fdddd11409f);
+            
+    
+            var poly_line_8c00b1c0235588a7ef925347dd6e173b = L.polyline(
+                [[28.573255, -80.646895], [28.5383, -81.3792]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_8c00b1c0235588a7ef925347dd6e173b.bindTooltip(
+                `<div>
+                     KSC LC-39A → City (Orlando): 71.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3c82a35960b06dd83cb3605c021764f8 = L.marker(
+                [34.6391, -120.4579],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_91f6339473d344f47b3cb270d0740ad0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0a8071d02e97185f9cf719c5fcb7d3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c3dc7a02d9a59556a8bfe8bac6001c3 = $(`<div id="html_9c3dc7a02d9a59556a8bfe8bac6001c3" style="width: 100.0%; height: 100.0%;">City (Lompoc)</div>`)[0];
+                popup_a0a8071d02e97185f9cf719c5fcb7d3f.setContent(html_9c3dc7a02d9a59556a8bfe8bac6001c3);
+            
+        
+
+        marker_3c82a35960b06dd83cb3605c021764f8.bindPopup(popup_a0a8071d02e97185f9cf719c5fcb7d3f)
+        ;
+
+        
+    
+    
+                marker_3c82a35960b06dd83cb3605c021764f8.setIcon(icon_91f6339473d344f47b3cb270d0740ad0);
+            
+    
+            var poly_line_ad6bf37b0c5aa1e88f27ac851ab40a02 = L.polyline(
+                [[28.573255, -80.646895], [34.6391, -120.4579]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_ad6bf37b0c5aa1e88f27ac851ab40a02.bindTooltip(
+                `<div>
+                     KSC LC-39A → City (Lompoc): 3805.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f72a3380e0d5d2fa3e80bc4a17558805 = L.marker(
+                [34.632834, -120.610745],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_d487d0ae8a36e89e69f873e9d5e69ae3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61b04d7a08d6f03d24a20a51a33fc0e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9aedd4831301df4c92c939c79e63bd6b = $(`<div id="html_9aedd4831301df4c92c939c79e63bd6b" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E</div>`)[0];
+                popup_61b04d7a08d6f03d24a20a51a33fc0e8.setContent(html_9aedd4831301df4c92c939c79e63bd6b);
+            
+        
+
+        marker_f72a3380e0d5d2fa3e80bc4a17558805.bindPopup(popup_61b04d7a08d6f03d24a20a51a33fc0e8)
+        ;
+
+        
+    
+    
+                marker_f72a3380e0d5d2fa3e80bc4a17558805.setIcon(icon_d487d0ae8a36e89e69f873e9d5e69ae3);
+            
+    
+            var marker_5234f5518a119090118113d0fff87953 = L.marker(
+                [28.563, -80.567],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_e8f6f3bafd8a09123565a564c4b347e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f547bf6e8e99b5679b6c9a866193004a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_927e4a90c6b3a1ff0f6e7d490ebd1123 = $(`<div id="html_927e4a90c6b3a1ff0f6e7d490ebd1123" style="width: 100.0%; height: 100.0%;">Coastline</div>`)[0];
+                popup_f547bf6e8e99b5679b6c9a866193004a.setContent(html_927e4a90c6b3a1ff0f6e7d490ebd1123);
+            
+        
+
+        marker_5234f5518a119090118113d0fff87953.bindPopup(popup_f547bf6e8e99b5679b6c9a866193004a)
+        ;
+
+        
+    
+    
+                marker_5234f5518a119090118113d0fff87953.setIcon(icon_e8f6f3bafd8a09123565a564c4b347e4);
+            
+    
+            var poly_line_a8919ad391fac682b8a3ae3f4c7b1f61 = L.polyline(
+                [[34.632834, -120.610745], [28.563, -80.567]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_a8919ad391fac682b8a3ae3f4c7b1f61.bindTooltip(
+                `<div>
+                     VAFB SLC-4E → Coastline: 3826.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fed9f7948ce3df9174c53c0c4a555512 = L.marker(
+                [28.572, -80.799],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_1fa487236edf649e9165aebb81540a24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98ab1f1f0dc3a2d42d32fad3e6b6bb42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52b4db53140410c9db00d3aa3a556bd2 = $(`<div id="html_52b4db53140410c9db00d3aa3a556bd2" style="width: 100.0%; height: 100.0%;">Highway</div>`)[0];
+                popup_98ab1f1f0dc3a2d42d32fad3e6b6bb42.setContent(html_52b4db53140410c9db00d3aa3a556bd2);
+            
+        
+
+        marker_fed9f7948ce3df9174c53c0c4a555512.bindPopup(popup_98ab1f1f0dc3a2d42d32fad3e6b6bb42)
+        ;
+
+        
+    
+    
+                marker_fed9f7948ce3df9174c53c0c4a555512.setIcon(icon_1fa487236edf649e9165aebb81540a24);
+            
+    
+            var poly_line_efb2ef651946d60e66ece243ba2f739e = L.polyline(
+                [[34.632834, -120.610745], [28.572, -80.799]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_efb2ef651946d60e66ece243ba2f739e.bindTooltip(
+                `<div>
+                     VAFB SLC-4E → Highway: 3805.2 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc58b618542ac94928c14de7919b0f28 = L.marker(
+                [28.5383, -81.3792],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_97478772b89faf39e0e08901eeb70701 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d25584d0099981d3839cda6a10c9ea9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_180c4867d2a336e06d2ff5fd5d77e44a = $(`<div id="html_180c4867d2a336e06d2ff5fd5d77e44a" style="width: 100.0%; height: 100.0%;">City (Orlando)</div>`)[0];
+                popup_6d25584d0099981d3839cda6a10c9ea9.setContent(html_180c4867d2a336e06d2ff5fd5d77e44a);
+            
+        
+
+        marker_bc58b618542ac94928c14de7919b0f28.bindPopup(popup_6d25584d0099981d3839cda6a10c9ea9)
+        ;
+
+        
+    
+    
+                marker_bc58b618542ac94928c14de7919b0f28.setIcon(icon_97478772b89faf39e0e08901eeb70701);
+            
+    
+            var poly_line_feb5eceeb2bc0438c15c66870a9021e9 = L.polyline(
+                [[34.632834, -120.610745], [28.5383, -81.3792]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_feb5eceeb2bc0438c15c66870a9021e9.bindTooltip(
+                `<div>
+                     VAFB SLC-4E → City (Orlando): 3753.4 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_15175305f4697e69da804a35737c95ad = L.marker(
+                [34.6391, -120.4579],
+                {
+}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            var icon_0df4f65e08a6d70d0b7b0ac322e96f5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08f73eefa5c9b2299319a2b84aae34c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7af332001010a4ab23a05e818ad9b974 = $(`<div id="html_7af332001010a4ab23a05e818ad9b974" style="width: 100.0%; height: 100.0%;">City (Lompoc)</div>`)[0];
+                popup_08f73eefa5c9b2299319a2b84aae34c7.setContent(html_7af332001010a4ab23a05e818ad9b974);
+            
+        
+
+        marker_15175305f4697e69da804a35737c95ad.bindPopup(popup_08f73eefa5c9b2299319a2b84aae34c7)
+        ;
+
+        
+    
+    
+                marker_15175305f4697e69da804a35737c95ad.setIcon(icon_0df4f65e08a6d70d0b7b0ac322e96f5d);
+            
+    
+            var poly_line_9b5cdbd5047742bf189a9dc3dacfb2b0 = L.polyline(
+                [[34.632834, -120.610745], [34.6391, -120.4579]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+            poly_line_9b5cdbd5047742bf189a9dc3dacfb2b0.bindTooltip(
+                `<div>
+                     VAFB SLC-4E → City (Lompoc): 14.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_395858ccc7854872c229d76e4a7dff0f.addTo(map_d4d32065b2a618a21d95b9e4cad70d6b);
+        
+    
+                marker_eb41b44d8530075a94fdbd625d54393e.setIcon(icon_ff7837eded346e5353028d8999721b68);
+            
+    
+                marker_4c966154b81d109ce10e7a676d95c119.setIcon(icon_1cf4a9dfd395225299dad0198bdf19ec);
+            
+    
+                marker_31f91bb9638bb6700b04245859a4b1d2.setIcon(icon_c70d34c0dc7011ef8d8ac63c5bcc2001);
+            
+    
+                marker_66340fa9a4804720403a64ab26c0ef40.setIcon(icon_98d36e6bb00dc096289c45fc0ec1d941);
+            
+    
+                marker_0cd59f313cd5849330a4db216ebf3c42.setIcon(icon_2e30fcc9c120e24f2260c10b3edbde61);
+            
+    
+                marker_c44db3e562dac58ab05765135da5b3d8.setIcon(icon_cac3c8d0ebba9c3aa457e3c349cae507);
+            
+    
+                marker_b05bb9fc368433255d7765419acb0f80.setIcon(icon_26ca984baa075df502072a0b98ae2700);
+            
+    
+                marker_8c49ea00b240468ef6c963bdd8b834e5.setIcon(icon_69a266d0c809c6fc041177dacbec7f4f);
+            
+    
+                marker_ead7f9ee4a03c0ec3e2211536573d8bc.setIcon(icon_a96d285199a081fc0bc3ba7b5c4b04e3);
+            
+    
+                marker_de08375a499968f4fe91753de05a444e.setIcon(icon_91b48b814b09b6975ec4902caed2a781);
+            
+    
+                marker_f77261f40ed74e0b959933c6391237e5.setIcon(icon_fe1ae9dde65c1149469ee8c0c30055ac);
+            
+    
+                marker_eefa265b2d59148df264744f7e3d2096.setIcon(icon_9896dee1b5a8586bf37e10d71050ad41);
+            
+    
+                marker_63bb8ec178fa894095d954242b7aaa69.setIcon(icon_74fb02e9bcdcae7404fdbc64329f866c);
+            
+    
+                marker_c14b19c8cb3a9801b4d55875b95cfae8.setIcon(icon_a6de8d7aed2c941b2eab4fdddd11409f);
+            
+    
+                marker_3c82a35960b06dd83cb3605c021764f8.setIcon(icon_91f6339473d344f47b3cb270d0740ad0);
+            
+    
+                marker_f72a3380e0d5d2fa3e80bc4a17558805.setIcon(icon_d487d0ae8a36e89e69f873e9d5e69ae3);
+            
+    
+                marker_5234f5518a119090118113d0fff87953.setIcon(icon_e8f6f3bafd8a09123565a564c4b347e4);
+            
+    
+                marker_fed9f7948ce3df9174c53c0c4a555512.setIcon(icon_1fa487236edf649e9165aebb81540a24);
+            
+    
+                marker_bc58b618542ac94928c14de7919b0f28.setIcon(icon_97478772b89faf39e0e08901eeb70701);
+            
+    
+                marker_15175305f4697e69da804a35737c95ad.setIcon(icon_0df4f65e08a6d70d0b7b0ac322e96f5d);
+            
+</script>
+</html>
